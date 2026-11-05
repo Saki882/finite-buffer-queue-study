@@ -64,9 +64,9 @@ Packet sizes follow a two-state Markov chain with equal stationary probabilities
 
 The correlation parameter φ controls the probability of switching between packet-size states:
 
-\[
+$$
 P_{\mathrm{switch}}=\frac{1-\phi}{2}
-\]
+$$
 
 Positive values of φ increase the tendency for consecutive packets to have the same size, while negative values increase the tendency to alternate between packet sizes.
 
@@ -81,9 +81,9 @@ Two types of arrival processes are considered:
 
 For the MMPP cases, the high-state offered load is calculated as:
 
-\[
+$$
 \rho_H=\frac{2\rho h}{1+h}
-\]
+$$
 
 where ρ is the average offered load and h is the burstiness factor.
 
@@ -100,17 +100,17 @@ The experiment includes:
 
 This produces:
 
-\[
+$$
 4 \times 3 \times 3 \times 5 = 180
-\]
+$$
 
 experimental configurations.
 
 Each configuration uses 20 independent replications, giving a total of:
 
-\[
+$$
 180 \times 20 = 3,600
-\]
+$$
 
 simulation runs.
 
@@ -179,27 +179,27 @@ For the baseline configuration with:
 
 the simulated packet-loss probability was:
 
-\[
+$$
 0.013622 \pm 0.000247
-\]
+$$
 
 The corresponding analytical result was:
 
-\[
+$$
 0.013651
-\]
+$$
 
 The simulated mean number of packets in the system was:
 
-\[
+$$
 6.4297 \pm 0.0314
-\]
+$$
 
 The analytical result was:
 
-\[
+$$
 6.4199
-\]
+$$
 
 Both analytical values fall within the corresponding simulation 95% confidence intervals.
 
