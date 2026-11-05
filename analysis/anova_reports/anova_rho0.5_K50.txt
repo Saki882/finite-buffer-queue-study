@@ -1,0 +1,14 @@
+rho=0.5, K=50
+Arrival: Poisson vs MMPP-h2
+Service: phi=0 vs phi=0.6
+Rows: 80
+
+Focused 2x2 factorial analysis only; this is not a test of the entire grid.
+Interpret p-values with effect sizes, confidence intervals and diagnostics.
+
+[lossRatio] skipped: insufficient data/variation
+
+[burstRatio] skipped: insufficient data/variation
+
+[recoveryMean] skipped: insufficient data/variation
+

@@ -1,0 +1,74 @@
+rho=0.7, K=20
+Arrival: Poisson vs MMPP-h2
+Service: phi=0 vs phi=0.6
+Rows: 80
+
+Focused 2x2 factorial analysis only; this is not a test of the entire grid.
+Interpret p-values with effect sizes, confidence intervals and diagnostics.
+
+[lossRatio, raw; Type-II ANOVA]
+                               sum_sq    df              F  PR(>F)    eta_sq
+C(arr_factor)                0.001066   1.0  148556.495271     0.0  0.514551
+C(svc_factor)                0.000642   1.0   89499.729843     0.0  0.309998
+C(arr_factor):C(svc_factor)  0.000363   1.0   50578.621221     0.0  0.175188
+Residual                     0.000001  76.0            NaN     NaN  0.000263
+
+Residual Shapiro-Wilk p-value: 3.92377e-07
+Levene p-value (median-centered): 1.25805e-06
+Residual degrees of freedom: 76
+
+[lossRatio, log10; Type-II ANOVA]
+                                sum_sq    df             F  PR(>F)    eta_sq
+C(arr_factor)                37.590299   1.0  77362.493802     0.0  0.597074
+C(svc_factor)                21.807017   1.0  44879.801693     0.0  0.346376
+C(arr_factor):C(svc_factor)   3.523327   1.0   7251.161679     0.0  0.055964
+Residual                      0.036928  76.0           NaN     NaN  0.000587
+
+Residual Shapiro-Wilk p-value: 9.94014e-07
+Levene p-value (median-centered): 7.15977e-08
+Residual degrees of freedom: 76
+
+[burstRatio, raw; Type-II ANOVA]
+                               sum_sq    df            F   PR(>F)    eta_sq
+C(arr_factor)                0.571609   1.0  1747.138858  0.00000  0.921280
+C(svc_factor)                0.023920   1.0    73.111285  0.00000  0.038552
+C(arr_factor):C(svc_factor)  0.000057   1.0     0.174455  0.67736  0.000092
+Residual                     0.024865  76.0          NaN      NaN  0.040075
+
+Residual Shapiro-Wilk p-value: 4.65344e-07
+Levene p-value (median-centered): 1.97779e-10
+Residual degrees of freedom: 76
+
+[burstRatio, log10; Type-II ANOVA]
+                               sum_sq    df            F    PR(>F)    eta_sq
+C(arr_factor)                0.046054   1.0  1559.227394  0.000000  0.915898
+C(svc_factor)                0.001961   1.0    66.398332  0.000000  0.039003
+C(arr_factor):C(svc_factor)  0.000023   1.0     0.777567  0.380667  0.000457
+Residual                     0.002245  76.0          NaN       NaN  0.044643
+
+Residual Shapiro-Wilk p-value: 2.29638e-07
+Levene p-value (median-centered): 6.96538e-11
+Residual degrees of freedom: 76
+
+[recoveryMean, raw; Type-II ANOVA]
+                               sum_sq    df            F    PR(>F)    eta_sq
+C(arr_factor)                0.000137   1.0  1235.977260  0.000000  0.791975
+C(svc_factor)                0.000000   1.0     0.062919  0.802618  0.000040
+C(arr_factor):C(svc_factor)  0.000028   1.0   248.586634  0.000000  0.159286
+Residual                     0.000008  76.0          NaN       NaN  0.048698
+
+Residual Shapiro-Wilk p-value: 4.89952e-08
+Levene p-value (median-centered): 3.31966e-05
+Residual degrees of freedom: 76
+
+[recoveryMean, log10; Type-II ANOVA]
+                               sum_sq    df           F   PR(>F)    eta_sq
+C(arr_factor)                0.129133   1.0  974.339853  0.00000  0.779372
+C(svc_factor)                0.000177   1.0    1.334759  0.25158  0.001068
+C(arr_factor):C(svc_factor)  0.026306   1.0  198.485291  0.00000  0.158768
+Residual                     0.010073  76.0         NaN      NaN  0.060792
+
+Residual Shapiro-Wilk p-value: 2.26338e-09
+Levene p-value (median-centered): 7.69072e-06
+Residual degrees of freedom: 76
+

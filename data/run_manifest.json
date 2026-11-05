@@ -1,0 +1,46 @@
+{
+  "Ks": [
+    10,
+    20,
+    50
+  ],
+  "arrivals": [
+    [
+      "Poisson",
+      1.0,
+      0.05
+    ],
+    [
+      "MMPP-h2",
+      2.0,
+      0.02
+    ],
+    [
+      "MMPP-h3",
+      3.0,
+      0.02
+    ],
+    [
+      "MMPP-h5",
+      5.0,
+      0.02
+    ]
+  ],
+  "binary": "/home/sakiray/ns-3-dev/experiments/finite-buffer/ref_sim",
+  "phis": [
+    -0.6,
+    0.0,
+    0.3,
+    0.6,
+    0.9
+  ],
+  "quick": false,
+  "reps": 20,
+  "rhos": [
+    0.5,
+    0.7,
+    0.9
+  ],
+  "simTime": 5000,
+  "warm": 100
+}
